@@ -1,0 +1,34 @@
+<h1>Twitch</h1>
+
+<h2>Preview</h2>
+<div style="width: 960px; height: 540px; overflow: hidden">
+  <iframe
+    id="table-gfx"
+    width="1920"
+    height="1080"
+    style="transform: scale(0.5); transform-origin: 0 0"
+  ></iframe>
+</div>
+
+<h2>Embed</h2>
+<input style="width: 100%" readonly id="table-embed" class="mb-5" />
+
+<h2>Get Table</h2>
+<form id="request-table" class="mb-5">
+  <div class="form-group">
+    <label for="link">Link to Group</label>
+    <input
+      type="url"
+      class="form-control"
+      id="link"
+      placeholder="https://www.primeleague.gg/leagues/prm/3010-spring-split-2023/group/509-gruppenphase/5821-division-5-37"
+    />
+  </div>
+  <div class="d-flex">
+    <div class="form-group mr-3">
+      <button type="submit" class="btn btn-primary">Get Table</button>
+    </div>
+  </div>
+</form>
+
+<script src="/pages/op-module-league-prm/frontend.js" defer></script>

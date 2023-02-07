@@ -1,0 +1,29 @@
+{
+    "name": "module-league-prm",
+    "version": "1.0.0",
+    "description": "Module that provides GFX elements for prime league group tables",
+    "author": "RCVolus",
+    "license": "MIT",
+    "toolkit": {
+        "modes": [
+            "PLUGIN"
+        ],
+        "plugin": {
+            "main": "dist/plugin.js"
+        },
+        "needsBuild": true,
+        "dependencies": [
+            "module-teams"
+        ]
+    },
+    "devDependencies": {
+        "@rcv-prod-toolkit/types": "github:rcv-prod-toolkit/types",
+        "typescript": "^4.9.5"
+    },
+    "scripts": {
+        "build": "tsc"
+    },
+    "dependencies": {
+        "axios": "^1.2.6"
+    }
+}
