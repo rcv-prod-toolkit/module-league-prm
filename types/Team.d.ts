@@ -1,5 +1,7 @@
 export interface Team {
   name: string
   tag: string
-  score: number
+  wins: number
+  losses: number
+  logo: string
 }
