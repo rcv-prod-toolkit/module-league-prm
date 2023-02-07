@@ -15,9 +15,41 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   font-family: var(--primary-font-family);
   color: var(--text-color);
   font-weight: 700;
+  font-size: 35px;
   position: relative;
+}
+
+table {
+  width: 92%;
+  border-collapse: separate;
+  border-spacing: 0 5px;
+}
+
+img {
+  width: 64px;
+}
+
+thead {
+  background-color: var(--background-color);
+}
+
+th {
+  text-align: left;
+  padding: 10px 5px;
+}
+
+td {
+  padding: 5px;
+}
+
+td:first-child {
+  text-align: center;
+}
+
+tbody tr {
+  background-color: var(--background-light-color);
 }

@@ -1,6 +1,6 @@
 export interface Team {
+  place: number
   name: string
-  tag: string
   wins: number
   losses: number
   logo: string
