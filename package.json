@@ -18,12 +18,14 @@
     },
     "devDependencies": {
         "@rcv-prod-toolkit/types": "github:rcv-prod-toolkit/types",
+        "@types/triple-beam": "^1.3.2",
         "typescript": "^4.9.5"
     },
     "scripts": {
         "build": "tsc"
     },
     "dependencies": {
-        "axios": "^1.2.6"
+        "axios": "^1.2.6",
+        "tabletojson": "^2.0.7"
     }
 }
