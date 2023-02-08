@@ -30,11 +30,8 @@ table {
 }
 
 img {
-  width: 64px;
-}
-
-thead {
-  background-color: var(--background-color);
+  height: 64px;
+  margin-bottom: -10px;
 }
 
 th {
@@ -52,4 +49,15 @@ td:first-child {
 
 tbody tr {
   background-color: var(--background-light-color);
+}
+
+tr:nth-child(odd) {
+  background-color: var(--background-light-color);
+}
+tr:nth-child(even) {
+  background-color: var(--background-color);
+}
+
+thead tr {
+  background-color: var(--background-color) !important;
 }
