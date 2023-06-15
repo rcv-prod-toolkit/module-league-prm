@@ -30,12 +30,14 @@ module.exports = async (ctx: PluginContext) => {
     );
   
     teams = tables[0].map((t: any) => {
+      const bilanz = stripHtml(t.Bilanz).result.split('-')
+
       return {
-        place: parseInt(stripHtml(t.Platz).result),
+        place: parseInt(stripHtml('#').result),
         logo: t.Teilnehmer.match(/(?<=img data-src=").*?(?=")/)[0],
-        name: t.Teilnehmer.match(/(?<=class="table-cell-item">).*?(?=<)/)[0],
-        wins: parseInt(stripHtml(t.Gewonnen).result),
-        losses: parseInt(stripHtml(t.Verloren).result),
+        name: t.Teilnehmer.match(/(?<=class="table-cell-item name">).*?(?=<)/)[0],
+        wins: parseInt(bilanz[0]),
+        losses: parseInt(bilanz[1]),
       }
     })
 
