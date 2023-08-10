@@ -16,7 +16,7 @@ module.exports = async (ctx: PluginContext) => {
     },
     pages: [
       {
-        name: `League PRM Tables`,
+        name: `LoL: PRM Tables`,
         frontend: 'frontend',
         id: `op-${namespace}`
       }
