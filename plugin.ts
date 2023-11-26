@@ -31,11 +31,13 @@ module.exports = async (ctx: PluginContext) => {
   
     teams = tables[0].map((t: any) => {
       const bilanz = stripHtml(t.Bilanz).result.split('-')
+      const team = stripHtml(t.Teilnehmer).result.split('\n')
 
       return {
         place: parseInt(stripHtml('#').result),
         logo: t.Teilnehmer.match(/(?<=img data-src=").*?(?=")/)[0],
-        name: t.Teilnehmer.match(/(?<=class="table-cell-item name">).*?(?=<)/)[0],
+        name: team[0],
+        country: team[1],
         wins: parseInt(bilanz[0]),
         losses: parseInt(bilanz[1]),
       }
