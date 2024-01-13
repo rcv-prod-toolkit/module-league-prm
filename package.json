@@ -12,9 +12,7 @@
             "main": "dist/plugin.js"
         },
         "needsBuild": true,
-        "dependencies": [
-            "module-teams"
-        ]
+        "toolkitVersion": ">=1.8"
     },
     "devDependencies": {
         "@rcv-prod-toolkit/types": "github:rcv-prod-toolkit/types",
