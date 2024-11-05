@@ -14,8 +14,8 @@ document.querySelector('#request-table').addEventListener('submit', (e) => {
 let server = ''
 
 LPTE.onready(async () => {
-  server = await window.constants.getWebServerPort()
-  const location = `http://${server}/pages/op-module-league-prm/gfx`
+  server = await window.constants.getModuleURL()
+  const location = `${server}/gfx`
 
   const apiKey = await window.constants.getApiKey()
 
